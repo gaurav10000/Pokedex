@@ -1,0 +1,88 @@
+
+.pokemon-list-wrapper {
+    padding: 1rem ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+}
+
+.pokemon-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10rem;
+}
+.controls{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.controls > button {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: aqua;
+    border: none;
+    border-radius: 1rem;
+}
+
+
+@media screen and (max-width: 520px) {
+
+    .pokemon-list-wrapper {
+        margin: 1rem auto;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .pokemon-wrapper {
+        width: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .controls{
+        margin: 2rem auto;
+    }
+    
+    .controls > button {
+        margin: 1rem;
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .pokemon-list-wrapper {
+        margin: 1rem auto;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .pokemon-wrapper {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .controls{
+        
+    }
+    
+    .controls > button {
+        margin: 1rem;
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+
+}

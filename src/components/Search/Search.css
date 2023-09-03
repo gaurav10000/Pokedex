@@ -1,0 +1,113 @@
+
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('/pokemon/Pokemon\ Solid.ttf');
+}
+
+.search-wrapper {
+    width: 32rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+#pokemon-name-search {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    border: none;
+    outline: none;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+}
+button{
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: antiquewhite;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 900;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+}
+
+button:hover{
+    color: rgb(255, 132, 0);
+}
+
+@media screen and (max-width: 520px) {
+
+    .search-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pokemon-name-search {
+        width: 70%;
+        height: 10%;
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 1rem;
+        outline: none;
+    }
+
+    button{
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .search-wrapper{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0.5rem;
+    }
+
+    #pokemon-name-search {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 0.5rem;
+        outline: none;
+        font-size: 1rem;
+    }
+    
+    button{
+        padding: 0.5rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
+    
